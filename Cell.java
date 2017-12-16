@@ -16,7 +16,7 @@ public class Cell
         hasShip = false;
         isHit = false;
     }
-    public String toStringOpponent()
+    public String displayOpponent()
     {
         char character;
         if (isHit)
@@ -30,7 +30,7 @@ public class Cell
         return " " + character + " " ;
     }
 
-    public String toString()
+    public String display()
     {
         char character;
         if (isHit)

@@ -45,9 +45,9 @@ public class Game
                 opponent = player1;
             }
             System.out.println(currentTurn + " it is your turn! Here is your board");
-            System.out.println(currentTurn.getBoard());
+            System.out.println(currentTurn.getBoard().display());
             System.out.println("Here is your opponent's board");
-            System.out.println(opponent.getBoard().toStringOpponent());
+            System.out.println(opponent.getBoard().displayOpponent());
             System.out.print("Enter coordinates to hit: ");
             int xcoord = in.nextInt();
             int ycoord = in.nextInt();
@@ -69,7 +69,7 @@ public class Game
             }
             c.readLine();
             hitShip = null;
-            System.out.println(opponent.getBoard().toStringOpponent());
+            System.out.println(opponent.getBoard().displayOpponent());
         }
 
     }

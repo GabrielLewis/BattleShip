@@ -21,7 +21,7 @@ public class Board
         }
         ships = new ArrayList<>();
     }
-    public String toStringOpponent()
+    public String displayOpponent()
     {
         final int SINGLEDIGIT = 9;
         String toReturn = "   ";
@@ -50,14 +50,14 @@ public class Board
             }
             for (int col = 0; col < size; col++)
             {
-                toReturn = toReturn + grid[row][col].toStringOpponent();
+                toReturn = toReturn + grid[row][col].displayOpponent();
             }
             toReturn = toReturn + "\n";
         }
         return toReturn;
     }
     
-    public String toString()
+    public String display()
     {
         final int SINGLEDIGIT = 9;
         String toReturn = "   ";
